@@ -6,3 +6,4 @@ RUN cd /var/www/html && curl https://wordpress.org/latest.tar.gz -o wordpress.ta
 EXPOSE 80
 VOLUME ["/sys/fs/cgroup","/var/www/html"]
 CMD ["httpd","-D","FOREGROUND"]
+ENTRYPOINT ["httpd","-D","FOREGROUND"]
