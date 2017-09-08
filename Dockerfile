@@ -1,5 +1,5 @@
 FROM centos
-MAINTAINER candice_nulud
+MAINTAINER candice
 RUN yum update -y && yum install httpd -y && yum install php -y
 ADD info.php /var/www/html
 EXPOSE 80
